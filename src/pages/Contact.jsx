@@ -31,47 +31,6 @@ function Contact() {
           </div>
         </section>
 
-        <section className="reservation-form">
-          <h2>Prenota un Tavolo</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Nome:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="phone">Telefono:</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="date">Data:</label>
-              <input type="date" id="date" name="date" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="time">Ora:</label>
-              <input type="time" id="time" name="time" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="guests">Numero di Persone:</label>
-              <input type="number" id="guests" name="guests" min="1" max="20" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message">Note Speciali:</label>
-              <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-
-            <button type="submit" className="submit-btn">Prenota Ora</button>
-          </form>
-        </section>
       </div>
       <Footer />
     </>

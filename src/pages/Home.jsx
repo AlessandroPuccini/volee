@@ -1,12 +1,32 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function Home() {
   
   // URL Cloudinary - sostituisci con la tua immagine
-  const heroImageUrl = "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&h=900&fit=crop"
-  const overviewImageUrl = "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=1600&h=900&fit=crop"
+  const heroImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759756/movies/donnasola3.png"
+  const overviewImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759671/movies/donnasola.png"
+
+  // Galleria con immagini di diverse dimensioni
+  const galleryImages = [
+    { id: 1, url: "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&h=1000&fit=crop", span: "span 1" },
+    { id: 2, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1760019339/stills/tavola.jpg", span: "span 2" },
+    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759713/movies/donnasola1.png", span: "span 1" },
+    { id: 4, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1751984111/stills/apple.png", span: "span 1" },
+    { id: 5, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066160/stills/interiorD4.png", span: "span 2" },
+    { id: 6, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066143/stills/interiorD3.jpg", span: "span 1" },
+  ]
+
+  // Track orientation per image (wide vs tall)
+  const [orientations, setOrientations] = useState({})
+
+  const handleImageLoad = (id) => (e) => {
+    const { naturalWidth, naturalHeight } = e.target
+    const orientation = naturalWidth / naturalHeight > 1.05 ? 'wide' : 'tall'
+    setOrientations((prev) => ({ ...prev, [id]: orientation }))
+  }
 
   return (
     <>
@@ -42,6 +62,16 @@ function Home() {
               <p>Cucina italiana autentica con ingredienti selezionati</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="gallery-section">
+        <div className="gallery-container">
+          {galleryImages.map((image) => (
+            <div key={image.id} className={`gallery-item ${orientations[image.id] || ''}`}>
+              <img src={image.url} alt={`Galleria ${image.id}`} onLoad={handleImageLoad(image.id)} />
+            </div>
+          ))}
         </div>
       </section>
 
