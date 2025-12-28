@@ -155,11 +155,55 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #c0392b;
 }
 
+/* Overview/Highlights Section */
+.overview {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overview-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.overview-content h2 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: var(--font-heading);
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+}
+
+.overview .features {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .feature {
@@ -170,10 +214,29 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.overview .feature {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2.5rem;
+  color: white;
+}
+
 .feature h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #2c3e50;
+}
+
+.overview .feature h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.overview .feature p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .cta-section {
@@ -397,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-content p {
   margin: 0.5rem 0;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 /* Responsive */
