@@ -44,22 +44,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar Styles */
 .navbar {
-  background-color: #787243;
+  background-color: transparent;
   padding: 0 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   height: var(--navbar-height);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.navbar.navbar-scrolled {
+  background-color: #787243;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar-brand a {
-  color: #ecf0f1;
+  color: #333;
   font-size: 2.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -69,23 +75,59 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   height: var(--navbar-height);
   line-height: 1;
+  transition: color 0.5s ease;
+}
+
+.navbar.navbar-scrolled .navbar-brand a {
+  color: #ecf0f1;
 }
 
 .navbar-menu {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .navbar-menu li a {
-  color: #ecf0f1;
+  color: #333;
   text-decoration: none;
   font-size: 1.1rem;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   height: var(--navbar-height);
+}
+
+.navbar.navbar-scrolled .navbar-menu li a {
+  color: #ecf0f1;
+}
+
+/* Call Us Button Styling */
+.call-us-btn {
+  /* background-color: #e74c3c; */
+  border: 1px solid #e74c3c;
+  color: #000000 !important;
+  padding: 0.7rem 1.5rem !important;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+  height: auto !important;
+  display: inline-flex !important;
+  align-items: center;
+  align-self: center;
+}
+
+.call-us-btn:hover {
+  background-color: #c0392b;
+}
+
+.navbar.navbar-scrolled .call-us-btn {
+  background-color: #e74c3c;
+}
+
+.navbar.navbar-scrolled .call-us-btn:hover {
+  background-color: #c0392b;
 }
 
 .navbar-menu li a:hover {
@@ -539,6 +581,81 @@ h1, h2, h3, h4, h5, h6 {
 .footer-content p {
   margin: 0.5rem 0;
   font-size: 0.85rem;
+}
+
+/* Menu Page Styles */
+.menu-page {
+  padding: 2rem;
+  margin-top: var(--navbar-height);
+  min-height: calc(100vh - var(--navbar-height));
+  background-color: #f9f9f9;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #787243;
+  margin-bottom: 3rem;
+  font-family: var(--font-heading);
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu-category {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e74c3c;
+  font-family: var(--font-heading);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  padding: 1rem 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  color: #787243;
+  font-weight: bold;
+}
+
+.item-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 /* Responsive */

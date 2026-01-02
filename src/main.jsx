@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import Home from './pages/Home.jsx'
+import Menu from './pages/Menu.jsx'
 import Locale from './pages/Locale.jsx'
 import Eventi from './pages/Eventi.jsx'
 import About from './pages/About.jsx'
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/il-locale" element={<Locale />} />
         <Route path="/eventi" element={<Eventi />} />
         <Route path="/chi-siamo" element={<About />} />
