@@ -15,17 +15,17 @@ function Contact() {
           </div>
           
           <div className="contact-item">
-            <h3>📞 Telefono</h3>
+            <h3>Telefono</h3>
             <p>+39 06 1234567</p>
           </div>
 
           <div className="contact-item">
-            <h3>📧 Email</h3>
+            <h3>Email</h3>
             <p>info@ristorantevolee.it</p>
           </div>
 
           <div className="contact-item">
-            <h3>🕐 Orari di Apertura</h3>
+            <h3>Orari di Apertura</h3>
             <p>Lunedì - Venerdì: 12:00 - 15:00, 19:00 - 23:00</p>
             <p>Sabato - Domenica: 12:00 - 23:00</p>
           </div>

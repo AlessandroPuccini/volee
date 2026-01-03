@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 function Home() {
   
@@ -21,6 +21,16 @@ function Home() {
 
   // Track orientation per image (wide vs tall)
   const [orientations, setOrientations] = useState({})
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash === '#overview') {
+      const el = document.getElementById('overview')
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [location])
 
   const handleImageLoad = (id) => (e) => {
     const { naturalWidth, naturalHeight } = e.target
@@ -40,25 +50,22 @@ function Home() {
         </div>
       </section>
 
-      <section className="overview" style={{ backgroundImage: `url(${overviewImageUrl})` }}>
+      <section id="overview" className="overview" style={{ backgroundImage: `url(${overviewImageUrl})` }}>
         <div className="overview-overlay"></div>
         <div className="overview-content">
-          <h2>I Nostri Punti di Forza</h2>
+          <h2>Il nostro ristorante</h2>
           <div className="features">
+       
             <div className="feature">
-              <h2>🍸 Bar</h2>
-              <p>Cocktail selezionati e bevande di qualità per ogni occasione</p>
+              <h2>Tradizione</h2>
+              <p>Una cucina che affonda le sue radici nella tradizione senza tralasciare la contaminazione con influenze moderne</p>
             </div>
             <div className="feature">
-              <h2>📍 Location</h2>
-              <p>Una location affascinante che crea l'atmosfera perfetta</p>
+              <h2>Ospitalità</h2>
+              <p>Dove ogni ospite è trattato come parte della famiglia</p>
             </div>
             <div className="feature">
-              <h2>🎉 Eventi</h2>
-              <p>Ospititamo gli eventi più esclusivi e indimenticabili</p>
-            </div>
-            <div className="feature">
-              <h2>🍽️ Ristorante</h2>
+              <h2>Materie prime</h2>
               <p>Cucina italiana autentica con ingredienti selezionati</p>
             </div>
           </div>
