@@ -8,6 +8,7 @@ function Home() {
   // URL Cloudinary - sostituisci con la tua immagine
   const heroImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759756/movies/donnasola3.png"
   const overviewImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759671/movies/donnasola.png"
+  const welcomeImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1750754435/samples/food/fish-vegetables.jpg"
 
   // Galleria con immagini di diverse dimensioni
   const galleryImages = [
@@ -40,33 +41,43 @@ function Home() {
 
   return (
     <>
-      <Navbar />
       <section className="hero-fullscreen" style={{ backgroundImage: `url(${heroImageUrl})` }}>
+        <Navbar />
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title">Benvenuti al Volée</h1>
+          {/* <h1 className="hero-title">Benvenuti al Volée</h1>
           <p className="hero-subtitle">Dove la tradizione italiana incontra l'eccellenza culinaria</p>
-          {/* <Link to="/menu" className="cta-button">Scopri il Menu</Link> */}
+          <Link to="/menu" className="cta-button">Scopri il Menu</Link> */}
+        </div>
+      </section>
+
+      <section className="welcome-section" style={{ backgroundImage: `url(${welcomeImageUrl})` }}>
+        <div className="welcome-overlay"></div>
+        <div className="welcome-content">
+          <h2>Benvenuti al Volèe</h2>
+          <p>Volèe ristorante & cocktail bar, si trova all'interno del Nettuno Tennis club ed è la location ideale per pranzi, cene, aperitivi al tramonto ed eventi</p>
         </div>
       </section>
 
       <section id="overview" className="overview" style={{ backgroundImage: `url(${overviewImageUrl})` }}>
         <div className="overview-overlay"></div>
         <div className="overview-content">
-          <h2>Il nostro ristorante</h2>
+          <h2>I nostri servizi</h2>
           <div className="features">
        
             <div className="feature">
-              <h2>Tradizione</h2>
+              <h2>Ristorante</h2>
               <p>Una cucina che affonda le sue radici nella tradizione senza tralasciare la contaminazione con influenze moderne</p>
+              <Link to="/menu" className="feature-button">Menu</Link>
             </div>
             <div className="feature">
-              <h2>Ospitalità</h2>
+              <h2>Bar</h2>
               <p>Dove ogni ospite è trattato come parte della famiglia</p>
             </div>
             <div className="feature">
-              <h2>Materie prime</h2>
+              <h2>Eventi</h2>
               <p>Cucina italiana autentica con ingredienti selezionati</p>
+              <Link to="/contatti" className="feature-button">Contattaci</Link>
             </div>
           </div>
         </div>

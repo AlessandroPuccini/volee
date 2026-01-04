@@ -38,7 +38,7 @@ function Navbar() {
                     <Link to="/" onClick={closeMenu}>Volée</Link>
                 </div>
                 <div className="navbar-actions">
-                    <a href="tel:+39XXXXXXXXXX" className="call-us-btn">Chiamaci</a>
+                    <a href="tel:+39XXXXXXXXXX" className="call-us-btn">CHIAMACI: +39 333 66667788</a>
                     <button
                         className={`hamburger ${isMenuOpen ? 'is-active' : ''}`}
                         type="button"
