@@ -5,7 +5,7 @@
   /* Font Families */
   --font-body: 'Urbanist', sans-serif;
   --font-heading: 'Lobster', cursive;
-  --navbar-height: 72px;
+  --navbar-height: 120px;
   
   line-height: 1.6;
   font-weight: 400;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.navbar-scrolled {
-  background-color: #787243;
+  background-color: #231F20;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -80,6 +80,14 @@ h1, h2, h3, h4, h5, h6 {
   height: var(--navbar-height);
   line-height: 1;
   transition: color 0.5s ease;
+}
+
+/* Logo inside navbar brand */
+.navbar-brand img,
+.navbar-logo {
+  height: 100px;
+  width: auto;
+  display: block;
 }
 
 .navbar.navbar-scrolled .navbar-brand a {
@@ -231,12 +239,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Call Us Button Styling */
 .call-us-btn {
-  /* background-color: #e74c3c; */
-  border: 1px solid #e74c3c;
+  background-color: #dbb373;
+  /* border: 1px solid #e74c3c; */
   border-radius: 25px;
   color: #ffffff !important;
   padding: 0.7rem 1.5rem !important;
   font-weight: 400;
+  text-decoration: none;
   transition: background-color 0.3s ease;
   height: auto !important;
   display: inline-flex !important;
@@ -245,16 +254,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .call-us-btn:hover {
-  background-color: #c0392b;
+  background-color: #c573bc;
 }
 
 .navbar.navbar-scrolled .call-us-btn {
-  background-color: #e74c3c;
   color: #ffffff !important;
 }
 
 .navbar.navbar-scrolled .call-us-btn:hover {
-  background-color: #c0392b;
+  background-color: #c573bc;
 }
 
 @media (max-width: 1024px) {
@@ -779,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer Styles */
 .footer {
-  background-color: #787243;
+  background-color: #231F20;
   color: #ecf0f1;
   text-align: center;
   padding: 2rem;

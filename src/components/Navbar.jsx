@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [logoSrc, setLogoSrc] = useState('/logo.png')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,10 +36,17 @@ function Navbar() {
         <>
             <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${isMenuOpen ? 'navbar-open' : ''}`}>
                 <div className="navbar-brand">
-                    <Link to="/" onClick={closeMenu}>Volée</Link>
+                    <Link to="/" onClick={closeMenu}>
+                        <img
+                            src={logoSrc}
+                            alt="Volèe"
+                            className="navbar-logo"
+                            onError={() => setLogoSrc('/vite.svg')}
+                        />
+                    </Link>
                 </div>
                 <div className="navbar-actions">
-                    <a href="tel:+39XXXXXXXXXX" className="call-us-btn">CHIAMACI: +39 333 66667788</a>
+                    <a href="tel:+39XXXXXXXXXX" className="call-us-btn">CHIAMACI +39 333 66667788</a>
                     <button
                         className={`hamburger ${isMenuOpen ? 'is-active' : ''}`}
                         type="button"

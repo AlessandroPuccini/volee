@@ -10,7 +10,7 @@ function Contact() {
         <section className="contact-info">
           <h2>Informazioni di Contatto</h2>
           <div className="contact-item">
-            <h3>📍 Indirizzo</h3>
+            <h3>Indirizzo</h3>
             <p>Via Roma 123, 00100 Roma, Italia</p>
           </div>
           
