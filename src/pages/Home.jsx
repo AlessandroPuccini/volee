@@ -67,7 +67,7 @@ function Home() {
        
             <div className="feature">
               <h2>Ristorante</h2>
-              <p>Una cucina che affonda le sue radici nella tradizione senza tralasciare la contaminazione con influenze moderne</p>
+              <p>La proposta nasce da una cucina italiana contemporanea che affonda le radici.</p>
               <Link to="/menu" className="feature-button">Menu</Link>
             </div>
             <div className="feature">
