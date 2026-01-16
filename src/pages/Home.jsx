@@ -84,6 +84,7 @@ function Home() {
               possibile gustare un menù di pesce, disponibile su prenotazione. Il ristorante è aperto 
               tutti i giorni a pranzo, dalle 12:00 alle 14:00, e a cena a partire dalle 19:30.
             </p>
+            <Link to="/menu" className="overview-button">Menu</Link>
           </div>
         </div>
       </section>
