@@ -10,7 +10,6 @@ function Menu() {
             <Navbar />
             <div className="menu-page">
                 <div className="menu-container">
-                    <h1 className="menu-title">Menu</h1>
                     <img src={menuSrc} alt="Immagine del Menu" className="menu-image" />   
             </div>
         </div>
