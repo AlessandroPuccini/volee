@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 function Home() {
   
   // URL Cloudinary - sostituisci con la tua immagine
-  const heroImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759756/movies/donnasola3.png"
+  const heroImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768560546/Volee/home.png"
   // const overviewImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759671/movies/donnasola.png"
   // const welcomeImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1750754435/samples/food/fish-vegetables.jpg"
 
