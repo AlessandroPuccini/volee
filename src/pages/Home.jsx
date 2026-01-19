@@ -14,7 +14,7 @@ function Home() {
   const galleryImages = [
     { id: 1, url: "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&h=1000&fit=crop", span: "span 1" },
     { id: 2, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1760019339/stills/tavola.jpg", span: "span 2" },
-    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759713/movies/donnasola1.png", span: "span 1" },
+    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1760085251/stills/uovo.jpg", span: "span 1" },
     { id: 4, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1751984111/stills/apple.png", span: "span 1" },
     { id: 5, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066160/stills/interiorD4.png", span: "span 2" },
     { id: 6, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066143/stills/interiorD3.jpg", span: "span 1" },
@@ -56,7 +56,7 @@ function Home() {
       <section className="welcome-section" >
         <div className="welcome-content">
           <h2>BENVENUTI AL VOLÈE</h2>
-          <p>DOVE OGNI MOMENTO TROVA IL SUO SPAZIO</p>
+          <p className="welcome-subtitle">DOVE OGNI MOMENTO <br></br>TROVA IL SUO SPAZIO</p>
           <p>DALLA PAUSA PRANZO AL COCKTAIL E CENA SERALE, DALLA COLAZIONE AL PARTY.
              VOLÈE RISTORANTE & COCKTAIL BAR SI TROVA PRESSO IL NETTUNO TENNIS CLUB.</p>
         </div>
@@ -71,7 +71,7 @@ function Home() {
               <h2>RIS<br></br>TOR<br></br>ANTE</h2>
             </div>
             <div className="overview-subtitle">
-              <p>UN PERCORSO GASTRONOMICO CHE UNISCE MEMORIA E SPERIMENTAZIONE.</p>
+              <p>UN PERCORSO GASTRONOMICO CHE <br></br>UNISCE MEMORIA E SPERIMENTAZIONE</p>
             </div>
           </div>
           <div className="overview-text">

@@ -6,7 +6,8 @@ function Eventi() {
     <>
       <Navbar />
       <div className="eventi-page">
-        <h1>I Nostri Eventi</h1>
+        <h1>A BREVE </h1>
+        <p>SUCCEDERANNO COSE BELLISSIME</p>
       </div>
       <Footer />
     </>

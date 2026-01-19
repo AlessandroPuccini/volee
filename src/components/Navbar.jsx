@@ -46,7 +46,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="navbar-actions">
-                    <a href="tel:+39XXXXXXXXXX" className="call-us-btn">CHIAMACI +39 333 66667788</a>
+                    <a href="tel:+393313714966" className="call-us-btn">CHIAMACI +39 331 3714966</a>
                     <button
                         className={`hamburger ${isMenuOpen ? 'is-active' : ''}`}
                         type="button"

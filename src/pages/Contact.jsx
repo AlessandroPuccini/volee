@@ -10,12 +10,12 @@ function Contact() {
         <section className="contact-info">
           <div className="contact-item">
             <h3>INDIRIZZO</h3>
-            <p>Via Roma 123, 00100 Roma, Italia</p>
+            <p>Via Petronio Fancelli, 5 Bologna</p>
           </div>
           
           <div className="contact-item">
             <h3>TELEFONO</h3>
-            <p>+39 06 1234567</p>
+            <p>+39 331 3714966</p>
           </div>
 
           <div className="contact-item">
@@ -24,11 +24,19 @@ function Contact() {
           </div>
 
           <div className="contact-item">
-            <h3>ORARI DI APERTURA</h3>
-            <p>Lunedì - Venerdì: 12:00 - 15:00, 19:00 - 23:00</p>
-            <p>Sabato - Domenica: 12:00 - 23:00</p>
+            <h3>ORARI BAR E CLUB</h3>
+            <p>Dal Martedì alla Domenica <br></br>09:00 - 14:00 / 17:00 - 23:00</p>
+            <p>Lunedì chiuso</p>
+          </div>
+
+          <div className="contact-item">
+            <h3>ORARI RISTORANTE</h3>
+             <p>Dal Martedì alla Domenica <br></br>12:00 - 14:00 / 19:00 - 23:00</p>
+            <p>Lunedì chiuso</p>
           </div>
         </section>
+
+        
 
       </div>
       <Footer />
