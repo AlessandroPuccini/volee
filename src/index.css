@@ -441,10 +441,22 @@ h1, h2, h3, h4, h5, h6 {
     display: block !important;
   }
 
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+
   /* Contact Page Mobile Typography */
   .contact-page h1 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     letter-spacing: 0.3rem !important;
+  }
+
+  .contact-page {
+    padding: calc(var(--navbar-height) + 50px) 1.5rem 2rem 1.5rem !important;
   }
 
   .contact-info h2 {
@@ -453,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact-item h3 {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     letter-spacing: 0.3rem !important;
   }
 
@@ -1246,7 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-page h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
   color: #2c3e50;
   font-family: var(--font-body);
@@ -1272,7 +1284,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-item h3 {
   font-family: var(--font-body);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #2c3e50;
   margin-bottom: 0.5rem;
   letter-spacing: 0.3rem;
@@ -1318,6 +1330,46 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
   text-align: center;
   width: 100%;
+}
+
+.menu-visual {
+  width: 100%;
+}
+
+.menu-desktop {
+  display: block;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menu-mobile img {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  body.menu-dark-bg {
+    background-color: #231F20;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none !important;
+  }
+
+  .menu-mobile {
+    display: flex !important;
+    gap: 0.75rem;
+  }
+
+  .menu-mobile img {
+    width: 100%;
+  }
 }
 
 .menu-title {
