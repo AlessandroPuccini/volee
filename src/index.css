@@ -347,7 +347,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .overview-content {
-    padding: 1.5rem 1rem !important;
     max-width: 90vw;
   }
   
@@ -403,12 +402,27 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 2rem;
   }
 
+  .overview-header {
+    gap: 1rem !important;
+  }
+
   .overview-title h2, .bar-title h2, .eventi-title h2 {
     font-size: 2rem;
     padding-right: 0 !important;
   }
 
-  .overview-subtitle p, .bar-subtitle p, .eventi-subtitle p {
+  .overview-subtitle p {
+    font-size: 1.2rem;
+    padding-left: 0 !important;
+    letter-spacing: 0.1rem;
+  }
+
+  .overview-subtitle {
+    max-width: 65% !important;
+    margin-left: 1.3rem !important;
+  }
+
+  .bar-subtitle p, .eventi-subtitle p {
     font-size: 1.2rem;
     padding-left: 0 !important;
     letter-spacing: 0.1rem;
@@ -451,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Contact Page Mobile Typography */
   .contact-page h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     letter-spacing: 0.3rem !important;
   }
 
@@ -465,12 +479,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact-item h3 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     letter-spacing: 0.3rem !important;
   }
 
   .contact-item p {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     letter-spacing: 0.1rem !important;
   }
 }
@@ -576,7 +590,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .overview-header {
   
-    gap: 1.5rem;
+    gap: 1rem;
     padding-bottom: 1.5rem;
   }
 
@@ -590,6 +604,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     text-align: left;
+  }
+
+  .overview-subtitle {
+    max-width: 65% !important;
+    margin-left: 1.3rem !important;
   }
 
   .overview-text p {
@@ -1148,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .gallery-container {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     padding: 0;
     gap: 0;
     /* gap: 1.5rem;
@@ -1156,7 +1175,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .gallery-item {
-    padding: 1rem;
+    padding: .3rem;
   }
 }
 
@@ -1293,8 +1312,8 @@ h1, h2, h3, h4, h5, h6 {
 .contact-item p {
   font-family: var(--font-body);
   color: #555;
-  font-size: 1.2rem;
-  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
 }
 
 

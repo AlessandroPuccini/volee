@@ -12,13 +12,15 @@ function Home() {
 
   // Galleria con immagini di diverse dimensioni
   const galleryImages = [
-    { id: 1, url: "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&h=1000&fit=crop", span: "span 1" },
-    { id: 2, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1760019339/stills/tavola.jpg", span: "span 2" },
-    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1760085251/stills/uovo.jpg", span: "span 1" },
-    { id: 4, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1751984111/stills/apple.png", span: "span 1" },
-    { id: 5, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066160/stills/interiorD4.png", span: "span 2" },
-    { id: 6, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1752066143/stills/interiorD3.jpg", span: "span 1" },
+    { id: 1, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768948903/volee/archi.png", span: "span 1" },
+    { id: 2, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949519/volee/neon.jpg", span: "span 2" },
+    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949485/volee/salaviola.png", span: "span 1" },
+    { id: 4, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949456/volee/prosecco.png", span: "span 1" },
+    { id: 5, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949222/volee/bar.png", span: "span 2" },
+    { id: 6, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949391/volee/colazione.png", span: "span 1" },
   ]
+
+
 
   // Track orientation per image (wide vs tall)
   const [orientations, setOrientations] = useState({})

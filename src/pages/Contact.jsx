@@ -15,13 +15,10 @@ function Contact() {
           
           <div className="contact-item">
             <h3>TELEFONO</h3>
-            <p>+39 331 3714966</p>
+            <p>+39 389 2676565</p>
           </div>
 
-          <div className="contact-item">
-            <h3>EMAIL</h3>
-            <p>info@ristorantevolee.it</p>
-          </div>
+          
 
           <div className="contact-item">
             <h3>ORARI BAR E CLUB</h3>
