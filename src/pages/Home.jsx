@@ -155,18 +155,3 @@ export default Home
 
 
 
-
-// <div className="feature">
-//               <h2>Ristorante</h2>
-//               <p>La proposta nasce da una cucina italiana contemporanea che affonda le radici.</p>
-//               <Link to="/menu" className="feature-button">Menu</Link>
-//             </div>
-//             <div className="feature">
-//               <h2>Bar</h2>
-//               <p>Dove ogni ospite è trattato come parte della famiglia</p>
-//             </div>
-//             <div className="feature">
-//               <h2>Eventi</h2>
-//               <p>Cucina italiana autentica con ingredienti selezionati</p>
-//               <Link to="/contatti" className="feature-button">Contattaci</Link>
-//             </div>
