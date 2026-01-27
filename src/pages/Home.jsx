@@ -60,7 +60,7 @@ function Home() {
           <h2>BENVENUTI AL VOLÈE</h2>
           <p className="welcome-subtitle">DOVE OGNI MOMENTO <br></br>TROVA IL SUO SPAZIO</p>
           <p>DALLA PAUSA PRANZO AL COCKTAIL E CENA SERALE, DALLA COLAZIONE AL PARTY.
-             VOLÈE RISTORANTE & COCKTAIL BAR SI TROVA PRESSO IL NETTUNO TENNIS CLUB.</p>
+             VOLÈE RISTORANTE & COCKTAIL BAR SI TROVA PRESSO IL NETTUNO SPORT CENTER.</p>
         </div>
       </section>
 

@@ -22,7 +22,8 @@ function Contact() {
 
           <div className="contact-item">
             <h3>ORARI BAR E CLUB</h3>
-            <p>Dal Martedì alla Domenica <br></br>09:00 - 14:00 / 17:00 - 23:00</p>
+            <p>Dal Martedì alla Sabato <br></br>09:00 - 14:00 / 17:00 - 23:00</p>
+            <p>Domenica  09:00 - 15:00</p>
             <p>Lunedì chiuso</p>
           </div>
 
