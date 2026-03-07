@@ -6,18 +6,18 @@ import { useState, useEffect } from 'react'
 function Home() {
   
   // URL Cloudinary - sostituisci con la tua immagine
-  const heroImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768560546/Volee/home.png"
+  const heroImageUrl = "https://ik.imagekit.io/ae2125/home%20vole%CC%80e.png"
   // const overviewImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1759759671/movies/donnasola.png"
   // const welcomeImageUrl = "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1750754435/samples/food/fish-vegetables.jpg"
 
   // Galleria con immagini di diverse dimensioni
   const galleryImages = [
-    { id: 1, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768948903/volee/archi.png", span: "span 1" },
-    { id: 2, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949519/volee/neon.jpg", span: "span 2" },
-    { id: 3, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949485/volee/salaviola.png", span: "span 1" },
-    { id: 4, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949456/volee/prosecco.png", span: "span 1" },
-    { id: 5, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949222/volee/bar.png", span: "span 2" },
-    { id: 6, url: "https://res.cloudinary.com/dmxjn7rsc/image/upload/v1768949391/volee/colazione.png", span: "span 1" },
+    { id: 1, url: "https://ik.imagekit.io/ae2125/archi.png", span: "span 1" },
+    { id: 2, url: "https://ik.imagekit.io/ae2125/neon.jpg", span: "span 2" },
+    { id: 3, url: "https://ik.imagekit.io/ae2125/sala%20viola.png", span: "span 1" },
+    { id: 4, url: "https://ik.imagekit.io/ae2125/prosecco.png", span: "span 1" },
+    { id: 5, url: "https://ik.imagekit.io/ae2125/bar.png", span: "span 2" },
+    { id: 6, url: "https://ik.imagekit.io/ae2125/colazione.png", span: "span 1" },
   ]
 
 
