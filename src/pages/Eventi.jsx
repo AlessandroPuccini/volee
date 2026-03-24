@@ -6,8 +6,22 @@ function Eventi() {
     <>
       <Navbar />
       <div className="eventi-page">
-        <h1>A BREVE </h1>
-        <p>SUCCEDERANNO COSE BELLISSIME</p>
+        <div className="evento-sx">
+          <section className="eventi-img">
+            <img src="https://ik.imagekit.io/ae2125/SOFT%20CLUBBING.jpg" alt="Soft Clubbing" />
+          </section>
+          <section className="eventi-info">
+            <p className="evento-date">DIMENTICA LA NOTTE</p>
+            <p>
+            Da domenica 29 Marzo, il format europeo del Soft Clubbing atterra da #VOLEEBOLOGNA <br></br> <br></br>
+            5 Ore di pura connessione: <br></br> Colazione & Brunch<br></br> Aperitivo <br></br> Musica Giusta
+            <br></br> <br></br>
+            Ogni Domenica | 10:00 - 15:00 <br></br>
+            Il tuo tavolo ti aspetta, prenota ora! <br></br>
+            +39 389 2676565
+            </p>
+          </section>
+        </div>
       </div>
       <Footer />
     </>
