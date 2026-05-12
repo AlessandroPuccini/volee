@@ -838,6 +838,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
+.btn-prenota {
+  display: inline-block;
+  background-color: #dbb373;
+  color: #ffffff !important;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.btn-prenota:hover {
+  background-color: #a13695;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .evento-sx {
     flex-direction: column;

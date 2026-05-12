@@ -24,8 +24,9 @@ function Eventi() {
             5 Ore di pura connessione: <br></br> Colazione & Brunch<br></br> Aperitivo <br></br> Musica Giusta
             <br></br> <br></br>
             Ogni Domenica | 10:00 - 15:00 <br></br>
-            Il tuo tavolo ti aspetta, prenota ora! <br></br>
-            +39 389 2676565
+            Il tuo tavolo ti aspetta! <br></br>
+            <a href="tel:+39389267656" className="btn-prenota">Prenota ora</a>
+            
             </p>
           </section>
         </div>
