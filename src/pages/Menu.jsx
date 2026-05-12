@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Seo from "../components/Seo"
 
 function Menu() {
     useEffect(() => {
@@ -10,8 +11,14 @@ function Menu() {
 
     return (
         <>
+            <Seo
+                title="Menu"
+                description="Scopri il menu di Volée Bologna: cucina italiana contemporanea, proposte stagionali e specialità della casa."
+                path="/menu"
+            />
             <Navbar />
             <div className="menu-page">
+                <h1 className="visually-hidden">Il nostro Menù: tra tradizione e innovazione.</h1>
                 <div className="menu-container">
                     <div className="menu-visual">
                         <div className="menu-desktop">

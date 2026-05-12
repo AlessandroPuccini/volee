@@ -1,9 +1,15 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Seo from "../components/Seo"
 
 function Contact() {
   return (
     <>
+      <Seo
+        title="Contatti"
+        description="Contatta Volée Bologna: indirizzo, telefono e orari di bar, club e ristorante presso il Nettuno Sport Center."
+        path="/contatti"
+      />
       <Navbar />
       <div className="contact-page">
         <h1>PUOI TROVARCI QUI</h1>

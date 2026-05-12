@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Seo from "../components/Seo"
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
@@ -43,10 +44,36 @@ function Home() {
 
   return (
     <>
+      <Seo
+        title="Ristorante e Cocktail Bar"
+        description="Volée Bologna: ristorante e  cocktail bar  al Nettuno Sport Center. Pranzo, cena, aperitivi, eventi e musica live."
+        path="/"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          name: "Volée Bologna",
+          url: "https://voleebologna.it/",
+          telephone: "+39 389 2676565",
+          servesCuisine: ["Italiana"],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Via Petronio Fancelli, 5",
+            addressLocality: "Bologna",
+            addressCountry: "IT"
+          },
+          sameAs: [
+            "https://www.instagram.com/voleebologna/",
+            "https://www.facebook.com/61588277434309/"
+          ]
+        }}
+      />
       <section className="hero-fullscreen" style={{ backgroundImage: `url(${heroImageUrl})` }}>
         <Navbar />
         <div className="hero-overlay"></div>
         <div className="hero-content">
+          <h1 className="visually-hidden">Scopri un'oasi di gusto a Bologna. Dalla colazione al drink dopo cena, 
+            Volèe trasforma ogni momento in un'esperienza. Cucina tradizionale rivisitata, 
+            cocktail d'autore e un'atmosfera unica nel cuore del Nettuno Sport Center</h1>
           {/* <h1 className="hero-title">Benvenuti al Volée</h1>
           <p className="hero-subtitle">Dove la tradizione italiana incontra l'eccellenza culinaria</p>
           <Link to="/menu" className="cta-button">Scopri il Menu</Link> */}

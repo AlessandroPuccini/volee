@@ -1,11 +1,18 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Seo from "../components/Seo";
 
 function Eventi() {
   return (
     <>
+      <Seo
+        title="Eventi"
+        description="L'aperitivo che non ti aspetti. Eventi e format esclusivi da Volée Bologna. Cerchi un cocktail bar a Bologna lontano dal caos del centro? Volèe è il posto ideale per un drink post-allenamento o un evento aziendale esclusivo."
+        path="/eventi"
+      />
       <Navbar />
       <div className="eventi-page">
+        <h1 className="invisible">L'aperitivo che non ti aspetti. Eventi e format esclusivi da Volée Bologna. Cerchi un cocktail bar a Bologna lontano dal caos del centro? Volèe è il posto ideale per un drink post-allenamento o un evento aziendale esclusivo.</h1>
         <div className="evento-sx">
           <section className="eventi-img">
             <img src="https://ik.imagekit.io/ae2125/SOFT%20CLUBBING.jpg" alt="Soft Clubbing" />

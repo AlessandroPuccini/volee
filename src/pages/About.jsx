@@ -1,9 +1,15 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Seo from "../components/Seo"
 
 function About() {
   return (
     <>
+      <Seo
+        title="Chi Siamo"
+        description="Conosci Volée Bologna: identità, storia e visione di un ristorante e cocktail bar dedicato alla convivialità."
+        path="/chi-siamo"
+      />
       <Navbar />
       <div className="about-page">
         <h1>Chi Siamo</h1>
